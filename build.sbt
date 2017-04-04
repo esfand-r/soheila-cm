@@ -41,11 +41,11 @@ resolvers += "Sonatype snapshots" at "https://oss.sonatype.org/content/repositor
 
 libraryDependencies ++= Seq(
   "org.scalaz" % "scalaz-core_2.11" % "7.2.2",
-  "com.cloudinary" %% "cloudinary-scala-play" % "1.0.0",
-  "com.typesafe.akka" %% "akka-actor" % "2.4.14",
-  "com.typesafe.akka" %% "akka-persistence" % "2.4.14",
-  "com.typesafe.akka" % "akka-stream_2.11" % "2.4.14",
-  "com.typesafe.akka" %% "akka-testkit" % "2.4.14",
+  "com.cloudinary" %% "cloudinary-scala-play" % "1.1.2",
+  "com.typesafe.akka" %% "akka-actor" % "2.4.17",
+  "com.typesafe.akka" %% "akka-persistence" % "2.4.17",
+  "com.typesafe.akka" % "akka-stream_2.11" % "2.4.17",
+  "com.typesafe.akka" %% "akka-testkit" % "2.4.17",
   "org.iq80.leveldb" % "leveldb" % "0.9",
   "org.fusesource.leveldbjni" % "leveldbjni-all" % "1.8",
   "com.github.dnvriend" %% "akka-persistence-inmemory" % "1.3.8",
