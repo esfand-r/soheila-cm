@@ -2,7 +2,6 @@ package io.soheila.cms.daos
 
 import java.time.LocalDateTime
 
-import com.mohiva.play.silhouette.impl.providers.OAuth1Info
 import io.soheila.cms.{ CMSTestEntityUtil, MongoScope, MongoSpecification, WithMongo }
 import io.soheila.cms.entities.{ Media, MediaHost, MediaType, Story }
 import io.soheila.cms.types.StoryType
@@ -226,8 +225,6 @@ class StoryDAOSpec(implicit val ec: ExecutionContext) extends PlaySpecification 
    */
   trait Context extends MongoScope {
     self: WithServer =>
-
-    implicit lazy val format = Json.format[OAuth1Info]
 
     lazy val storyDao = new StoryDAOImpl(reactiveMongoAPI)
   }
